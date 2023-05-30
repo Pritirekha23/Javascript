@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String-practice-set</title>
+</head>
+<body>
+    <h2>String-practice-set</h2>
+    <script>
+    //Q1:
+   let str="Pri\""
+    document.write(str.length)
+
+    //includes
+    const sentence="This is pritirekha panda  Bhadrak "
+    const word="CSE"
+    document.write(sentence.includes(word))
+    document.write(`The word "${word}" 
+    ${sentence.includes(word)  ? 'is' : 'is  not '}in the sentence`) 
+
+    //startwith and endwith
+
+
+document.write("<br><br><br>")
+
+    //Extract the amount 
+    let st="please give me Rs 1000"
+   // let amount=st.slice("Please give Rs".length) 
+    let amount=Number.parseInt(st.slice(17))
+    document.write(amount,"<br>")
+    document.write(st,"<br>")
+    document.write(typeof amount)
+    
+ //Q4 (string is immutable so we cant change here )
+
+ let fri='Arun'
+ friend[2]='K'
+ document.write(friend)
+
+
+
+    </script>
+
+</body>
+</html>
