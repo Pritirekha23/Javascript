@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else-statement</title>
+</head>
+<body>
+    <script>
+        let a=Number(prompt("what is your age"))
+        if(a<0)
+        {
+            alert("This is an invalid age")
+        }
+        else if(a<9)
+        {
+            alert("You are a kid so you are not eligible for driving")
+        }
+        else if(a<18 && a>=9)
+        {
+            alert("You are a kid so you are eligible for driving after 18")
+        }
+
+        else{
+             alert("You are eligible for driving")
+        }
+        alert("Done")
+    </script>
+</body>
+</html>

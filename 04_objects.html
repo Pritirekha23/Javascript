@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive and objects</title>
+</head>
+<body>
+    <script>
+        //primitives (nn bb ss u)
+        let a=null;
+        let b=23;
+        let c=true;
+        let d=BigInt('500')
+        let e="Priti"
+        let f=Symbol("I am a symbol")
+        let g=undefined
+        console.log(a,b,c,d,e,f,g)
+        console.log(typeof c)
+
+        // output:null 23 true 500n 'Priti' Symbol(I am a symbol) undefined 
+        // boolean
+
+        //object
+        let students={
+            name:"Priti",
+            age:20,
+            course:"B.tech",
+            mark:78,
+            address:undefined
+        }
+        console.log(students["age"])
+    </script>
+</body>
+</html>

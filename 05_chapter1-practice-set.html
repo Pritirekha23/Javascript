@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter1 practice set</title>
+</head>
+<body>
+    <script>
+        //Q1: create a variable of type string and try to add a number to it.
+
+        let a="priti"
+        let b=3
+        console.log(a+b)
+
+        //output:priti3 
+
+        //Q2: use typeof operator to find the datatype of the string of the 1st question
+         
+        console.log(typeof a)
+        console.log(typeof b)
+        console.log(typeof (a+b))
+      //output:priti3 string number string
+
+
+        //Q3:Create a const object in js can you change to hold a number later?
+        
+        const students={
+            name:"Priti",
+            age:20,
+            course:"B.tech",
+            mark:78,
+            address:undefined
+        }
+        students['friend']="Jin"
+        console.log(students)
+       
+      
+       // students=23
+       // output:Error
+     
+
+
+        //Q4: Try to add a new key to the const object in problem 3 were you able to do it?
+        const student={
+            name:"Priti",
+            age:20,
+            course:"B.tech",
+            mark:78,
+            address:undefined
+        }
+        student['name']="Smruti"
+        console.log(student)
+
+        //Q5:Write a js program to create a word-meaning dictionary of 5 words.
+        const dict={
+            appreciate:"recognize the full worth",
+            ataraxia:"a state of freedom from emotional disturbance and anxiety",
+            yakka:"hard work"
+
+
+        }
+    console.log(dict['yakka'])
+    </script>
+</body>
+</html>
