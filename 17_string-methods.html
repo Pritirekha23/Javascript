@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+    <h2>string is immutable </h2>
+    <script>
+
+           let name="priti   " 
+           document.write(name.length ,"<br>") //8 
+           document.write(name.toUpperCase(),"<br>") //PRITI
+           document.write(name.toLowerCase(),"<br>") //priti
+           document.write(name.slice(2,4),"<br>")//it
+           document.write(name.slice(2),"<br>")//iti
+           document.write(name.replace("pri" ,"smru"),"<br>")//smruti
+           let friend="parkjimin"
+           document.write(name.concat(" is a friend of ",friend , " ok "),"<br>")
+           let friend2="       swati   "  
+           document.write(friend2,"<br>")         
+           document.write(friend2.trim(),"<br>")
+ 
+
+           let fr='Namjoon' + '  Kim'
+           document.write(fr[0])
+           document.write(fr[3] ,"<br>")
+           //fr[2]="Pr" we cant change 
+           document.write(fr)
+    </script>
+</body>
+</html>
