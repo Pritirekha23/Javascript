@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let marks=[73,98,57,60,86,null,false,"not present"]
+        document.write(marks) //73,98,57,60,86,,false,not present
+        //accessing index values
+        document.write(marks[0],"<br>") //73
+        document.write(marks[4],"<br>") //86
+        document.write(marks[3],"<br>") //60
+        document.write(marks[8],"<br>")//undefined bcz index 8 is not present
+        document.write(marks[7],"<br>") //not present
+
+        document.write("the length of marks is ::",marks.length,"<br>") //the length of marks is ::8
+        marks[8]=30; //adding a new value to the array
+        marks[0]=100;//changing the value of an array
+        document.write(marks)
+        document.write(marks[0],"<br>")
+        document.write(marks[4],"<br>") 
+        document.write(marks[3],"<br>") 
+        document.write(marks[8],"<br>")
+        
+        document.write("the length of marks is ::",marks.length,"<br>")
+
+
+    </script>
+</body>
+</html>
