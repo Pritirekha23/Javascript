@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array methods part-2</h1>
+    <script>
+
+        let arr=[3,6,133,229]
+        let arr_a=[10,20,30,40]
+        document.write(arr,"<br>")
+        document.write("array length before deleting",arr.length,"<br>")
+        //delete
+        delete arr[0]
+        document.write(arr,"<br>")
+        //so there is no chnage in the length after deleting an element
+        document.write("array length after deleting",arr.length,"<br>")
+
+        //concat(it will merse all the array)
+        let newArray=arr.concat(arr_a)
+        document.write(newArray)
+
+        //sort methods
+        document.write("<br>")
+        arr.sort()
+        document.write(arr)
+
+        //ascending order sort(with compare function)
+        document.write("<br>")
+        let compare=(a,b)=>
+        {
+            return b - a
+        }
+        arr.sort(compare)
+        document.write(arr,"<br>")
+
+       //reverse of the array
+       document.write("Reverse of the arr","<br>")
+       arr.reverse()
+       document.write(arr)
+      
+       
+    </script>
+</body>
+</html>

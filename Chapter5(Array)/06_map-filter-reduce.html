@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map-filter-reduce-method</title>
+</head>
+<body>
+    <h1>map-filter-reduce</h1>
+    <script>
+        //map and filter returns a array and reduce returns a value.
+        //map method((value,index,array)
+        let arr=[45,43,21]
+        let a=arr.map((value,index)=>{
+            document.write(value,index)
+            return value+1
+        })
+
+        document.write("<br>",a)
+
+        //filter method
+        document.write("<br>","filter method","<br>")
+        let arr2=[45,23,21,9,0,4]
+         let r= arr2.filter((r=>{
+            return r<10
+        }))
+        document.write(r,"<br>")
+        document.write(arr2,"<br>")
+
+
+        //reduce method
+        document.write("reduce method ex-1","<br>")
+        let arr3=[1,2,3,4,5,6,3,2]
+        let new_arr3=arr3.reduce((h1,h2)=>{
+            return h1+h2
+        })
+        document.write(new_arr3,"<br>")
+
+        //
+
+        document.write("reduce method ex-2","<br>")
+        let arr4=[1,2,3,4,5,6,3,2]
+        
+        const reduce_fun=(h1,h2)=>
+        {
+            return h1+h2
+        }
+        let new_arr4=arr4.reduce(reduce_fun)
+        document.write(new_arr4)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map-filter-reduce</title>
+</head>
+<body>
+      <h1>Array Methods</h1>
+    <script>
+        let num=[1,2,3,5,6,7,8,9]
+     
+        let b=num.toString() // b is now a string
+        document.write(b,typeof b)
+        let c=num.join('_')
+        document.write("<br>")
+        document.write(c,typeof c,"<br>")
+        document.write("pop operation","<br>")
+        num.pop()
+        document.write(num)
+        //pop returns the poped element
+        document.write("<br>")
+        let r=num.pop()
+        document.write(num,r)
+
+        document.write("<br>")
+        document.write("push operation","<br>")
+        num.push(100) 
+        document.write(num)
+//push returns the new array length
+        document.write("<br>")
+        let r2=num.push(200,"<br>") 
+        document.write(num,r2)
+
+
+        //shift
+        document.write(" shift method","<br>")
+        let p=num.shift() //removes an element from the start of the array
+        document.write(p,num) 
+
+        document.write(" unshift method","<br>")
+        let p1=num.unshift(1) //add element
+        document.write("<br>") 
+        document.write(p1,num)
+
+    </script>
+</body>
+</html>
