@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+<body>
+    <script>
+        //old type
+        let num=[2,4,6,7,3]
+        for(let i=0;i<num.length;i++)
+        {
+            document.write(num[i])
+        }
+
+        //printing square of the array elements using for each loop
+
+        document.write("<br>")
+
+        num.forEach((element) =>{
+             document.write(element*element)
+        })
+        document.write("<br>")
+
+        //Array.form
+        let name="pritirekha"
+        let arr=Array.from(name)
+        document.write(arr)
+
+        document.write("<br>")
+
+    //new type
+    //for-of
+    for(let item of num)
+    {
+        document.write(item)
+    }
+
+    document.write("<br>")
+
+    //for-in
+    for(let i in num)
+    {
+        document.write(i)
+    }
+    </script>
+</body>
+</html>
