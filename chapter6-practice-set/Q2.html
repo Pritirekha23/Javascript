@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2:</title>
+</head>
+<body>
+    <script>
+       // Q2: In Q1 use confirm to ask the user if he wants to see the propmp again.html
+      
+
+        let runAgain=true;
+        const canDrive=(age)=>{
+          return age>=18?true:false
+         }
+
+    while(runAgain)
+    {
+            let age=prompt("Enter your age:")
+            age=Number.parseInt(age)
+            
+             
+        
+        if(canDrive(age))
+        {
+            alert("Yes you can drive ")
+        }
+        else
+        {
+            alert("No you can't drive.")
+        }
+        runAgain=confirm("Do you want to play again")
+    }
+    </script>
+</body>
+</html>
