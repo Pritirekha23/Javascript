@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3:</title>
+</head>
+<body>
+    <script>
+       
+        //Q3:In the previous Q, use console.error if the age entered is negative.
+
+
+        let runAgain=true;
+        const canDrive=(age)=>{
+          return age>=18?true:false
+         }
+
+    while(runAgain)
+    {
+            let age=prompt("Enter your age:")
+            age=Number.parseInt(age)
+            
+        if(age<0)
+        {
+            console.error("Please enter a valid age")
+            break;
+        }     
+        
+        if(canDrive(age))
+        {
+            alert("Yes you can drive ")
+        }
+        else
+        {
+            alert("No you can't drive.")
+        }
+        runAgain=confirm("Do you want to play again")
+    }
+    </script>
+</body>
+</html>
