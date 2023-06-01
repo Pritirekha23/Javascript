@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-5 practice set</title>
+</head>
+<body>
+   <script>
+   //Q1: Create an array of numbers and take input from the user to add numbers to this array.
+
+  /* let arr=[1,2,3,4,5,6,7,83]
+   let a=Number(prompt("Enter a number:"))
+   arr.push(a)
+   document.write(arr) */
+
+
+
+   //Q2:Keep adding numbers to the array in Q1 ntill 0 is added to the array.
+
+  /* let arr=[1,2,3,4,5,6,7,83]
+   let a;
+   do{
+   a=Number(prompt("Enter a number:"))
+   arr.push(a)
+   
+   } while(a!=0)
+   document.write(arr)   */
+   
+
+
+
+   //Q3:filter for numbers divisible by 10 from a given array.
+
+   /* let arr=[1,20,30,4,5,60,7,820]
+   let a;
+   let n=arr.filter((x)=>
+   {
+    return x%10==0;
+   })
+   document.write(n) */
+
+
+
+
+
+   //Q4:create an array of space of given numbers.
+/*
+   let arr=[1,20,30,4,5,60,7,820]
+   let a;
+   let n=arr.map((x)=>
+   {
+    return x*x;
+   })
+   document.write(n) */
+
+
+   //Q5:use reduce to calculate factorial of a given number an array of first n natural numbers (n being the number whose factorial needs to be calculated)
+
+   let arr=[1,2,3,4,5]
+   let a;
+   let n=arr.reduce((x1,x2)=>
+   {
+    return x1*x2;
+   })
+   document.write(n)
+
+
+    </script>
+</body>
+</html>
