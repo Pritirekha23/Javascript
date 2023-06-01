@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Guess the Number</h1>
+<p>Guess a number between 1 and 100:</p>
+<input type="text" id="guessInput">
+<button id="guessButton">Guess</button>
+<p id="result"></p>
+
+<script>
+    // Generate a random number between 1 and 100
+const targetNumber = Math.floor(Math.random() * 100) + 1;;
+
+
+// Initialize the number of guesses
+let numberOfGuesses = 0;
+
+// Function to handle the user's guesses
+function guessNumber() {
+  // Get the user's guess from the input field
+  const userGuess = parseInt(document.getElementById("guessInput").value);
+
+  // Increase the number of guesses
+  numberOfGuesses++;
+
+  // Check if the guess is correct
+  if (userGuess === targetNumber) {
+    // Display a success message
+    document.getElementById("result").innerHTML = `Congratulations! You guessed the number in ${numberOfGuesses} guesses.`;
+  } else if (userGuess < targetNumber) {
+    // Provide a hint that the number is higher
+    document.getElementById("result").innerHTML = "Try a higher number.";
+  } else {
+    // Provide a hint that the number is lower
+    document.getElementById("result").innerHTML = "Try a lower number.";
+  }
+}
+
+// Attach the guessNumber function to a button click event
+document.getElementById("guessButton").addEventListener("click", guessNumber);
+
+</script>
+
+</body>
+</html>

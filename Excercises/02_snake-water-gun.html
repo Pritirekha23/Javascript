@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake-water-gun</title>
+</head>
+<body>
+    <h1>Snake-water-gun-Game</h1>
+    <p>Choose one option:</p>
+    <button onclick="playGame('snake')">Snake</button>
+    <button onclick="playGame('water')">Water</button>
+    <button onclick="playGame('gun')">Gun</button>
+    <p id="result"></p>
+    <script>
+         function playGame(userChoice)
+         {
+            const choice=['Snake','Water','Gun'];
+            const machineChoice=choice[Math.floor(Math.random() * choice.length)];
+            let result=" ";
+            if(userChoice===machineChoice)
+            {
+                result="its a tie";
+            }
+            else if(
+                (userChoice==='Snake' && machineChoice==='Water')||
+                (userChoice === "water" && machineChoice === "gun") ||
+                (userChoice === "gun" && machineChoice=== "snake")
+            )
+            {
+                resukt='You win';
+            }
+            else{
+                result='Machine wins';
+            }
+            document.getElementById("result").innerHTML = `You chose ${userChoice}. machine chose ${machineChoice}. ${result}`;
+         }
+
+    </script>
+</body>
+</html>
