@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console methods</title>
+</head>
+<body>
+    <script>
+        obj={a:1,b:2,c:3}
+        console.table(obj)
+
+        console.warn("Hey dont do this")
+        // console.assert(5>2)
+        // console.assert(5>12)
+        console.info("this is an important")
+        console.error("this is an error")
+        console.log(console)
+
+        console.time("for loop")
+        for(let i=0;i<5;i++)
+        {
+            console.log(233)
+        }
+        console.timeEnd("for end")
+
+        console.time("while loop")
+        let i=0;
+        while(i<5)
+        {
+            console.log("hi while")
+            i++
+        }
+        console.timeEnd("while end")
+    </script>
+</body>
+</html>
