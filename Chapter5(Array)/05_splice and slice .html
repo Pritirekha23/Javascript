@@ -9,18 +9,17 @@
 <body>
     <h1>Splice and slice</h1> 
     <script>
-       let arr=[11,22,33,44,55,66,77,88,99,100]
-       arr.splice(2,3,50,60,40) //index then remove 3 eleemnt
-       document.write(arr,"<br>")
-       document.write("deleted values:","<br>")
-       let deletedValues=arr.splice(2,3,50,60,40)
-       document.write(deletedValues)
-       document.write(typeof deletedValues,"<br>")
+       let arr=[10,20,30,40,50,60,70,80]
+       arr.splice(2,3,55,66,77) //index then remove 3 eleemnt
+       document.write("after 3 element deleted from index 2::",arr,"<br>")
+       let deletedValues=arr.splice(2,3,55,66,77)
+       document.write("deleted values are:",deletedValues,"<br>")
+       document.write("type of deleted values :",typeof deletedValues,"<br>")
 
        //slice->it creates a new array
-       document.write("slice methods","<br>")
-      let new_arr =arr.slice(3,5) //index 3 to 5 but 5 is not included
-       document.write(new_arr)
+    //    document.write("slice methods","<br>")
+    //   let new_arr =arr.slice(3,5) //index 3 to 5 but 5 is not included
+    //    document.write(new_arr)
       
 
     </script>

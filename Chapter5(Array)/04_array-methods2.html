@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,43 +13,48 @@
     <h1>Array methods part-2</h1>
     <script>
 
-        let arr=[3,6,133,229]
-        let arr_a=[10,20,30,40]
-        document.write(arr,"<br>")
-        document.write("array length before deleting",arr.length,"<br>")
+        let arr = [3, 6, 133, 229]
+        let arr_a = [10, 20, 30, 40]
+        document.write(arr, "<br>")
+        document.write("array length before deleting", arr.length, "<br>")
 
         //delete
         delete arr[0]
-        document.write(arr,"<br>")
-
+        document.write(arr, "<br>")
+        document.write("array length after deleting 0th element", arr.length, "<br>")
+        delete arr[2]
+        document.write(arr, "<br>")
+        document.write("array length after deleting 2nd element ", arr.length, "<br>")
         //so there is no change in the length after deleting an element
+        document.write("----------------------<br>")
 
-        document.write("array length after deleting",arr.length,"<br>")
-
-        //concat(it will merse all the array)
+        //concat(it will merge all the array)
         let newArray=arr.concat(arr_a)
-        document.write(newArray)
+        document.write(newArray,"<br>")
 
         //sort methods
+        let thar=[50,20,40,30,10]
         document.write("<br>")
-        arr.sort()
-        document.write(arr)
+        thar.sort()
+        document.write(thar,"<br>")
 
-        //ascending order sort(with compare function)
+        //descending order sort(with compare function)
         document.write("<br>")
         let compare=(a,b)=>
         {
             return b - a
         }
-        arr.sort(compare)
-        document.write(arr,"<br>")
+        thar.sort(compare)
+        document.write(thar,"<br>")
 
-       //reverse of the array
-       document.write("Reverse of the arr","<br>")
-       arr.reverse()
-       document.write(arr)
-      
-       
+        //reverse of the array
+          let priti=[222,444,111]
+           document.write("Reverse of the priti","<br>")
+           priti.reverse()
+           document.write(priti)
+
+
     </script>
 </body>
+
 </html>

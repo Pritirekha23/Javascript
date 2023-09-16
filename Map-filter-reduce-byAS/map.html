@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr = [5, 1, 3, 2, 6];
+
+        function double(x) {
+            return x * 2
+        }
+        function triple(y) {
+            return y * 3
+        }
+        function binary(z) {
+            return z.toString(2)
+        }
+        const output1 = arr.map(double);
+        const output2 = arr.map(triple);
+        const output3 = arr.map(binary);
+        document.write(output1,"<br>");
+        document.write(output2,"<br>");
+        document.write(output3,"<br>");
+
+        //we can also write like this and this is known as higher order function
+        
+        //we can also write like this and this is known as higher order function
+        const output5 = arr.map( function four(k) {
+            return k * 4
+        });
+        document.write(output5,"<br>");
+
+        //with arrow functions
+        // const output6 = arr.map((p)=> {
+        //     return p * 6
+        // });
+        // document.write("power is 6:::",output6,"<br>");
+
+        //also we can write this
+        const output6 = arr.map((p)=> p * 6);
+        document.write("power is 6:::",output6,"<br>");
+
+    </script>
+</body>
+
+</html>
