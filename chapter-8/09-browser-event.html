@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser event</title>
+</head>
+<body>
+     
+     <div class="main" onmouseenter="alert('mouse is on the main div')">
+        <button onclick="alert('Hello')">Click me</button>
+     </div>
+    <script>
+ let a=document.getElementsByClassName("main")[0]
+ a.onclick=()=>
+ {
+    let b=document.getElementsByClassName("main")[0]
+    b.innerHTML="hello preety"
+ }
+    </script>
+</body>
+</html>
