@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting in js</title>
+</head>
+<body>
+   <h1>Sortins</h1>
+    <script>
+       let data=[40,30,20,60];
+       for(i=0;i<data.length;i++)
+       {
+        for(j=0;j<data.length;j++)
+        {
+            console.warn(data)
+            if(data[j]>data[j+1])
+            {
+                let temp=data[j];
+                data[j]=data[j+1];
+                data[j+1]=temp;
+            }
+        }
+       }
+    document.write(data)
+    
+    </script>
+</body>
+</html>

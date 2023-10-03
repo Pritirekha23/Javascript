@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting in js</title>
+</head>
+<body>
+   <h1> Insertion Sorting</h1>
+    <script>
+       let data=[40,30,20,60,10];
+       for(i=0;i<data.length;i++)
+       {
+        temp=data[i]
+        for(j=i-1;j>=0 && temp<data[j];j--)
+        {
+            //console.warn(data)             
+            data[j+1]=data[j];
+            
+        }
+        data[j+1]=temp;
+       }
+    document.write(data)
+    
+    </script>
+</body>
+</html>
