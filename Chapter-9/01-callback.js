@@ -17,6 +17,30 @@
 
 //CALL BACK
 
+// function loadScript(src,callback)
+// {
+//     var script=document.createElement("script");
+//     script.src=src;
+
+//     script.onload=function()
+//     {
+//         console.log("Loaded script withSRC:" +src)
+//         callback(src);
+//     }
+
+//     document.body.appendChild(script);
+// }
+
+// function hello(src)
+// {
+//     alert("hello callback" + src)
+// }
+// function gm(src)
+// {
+//     alert("Good morning" + src)
+// }
+// loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",gm);
+
 function loadScript(src,callback)
 {
     var script=document.createElement("script");
@@ -25,18 +49,31 @@ function loadScript(src,callback)
     script.onload=function()
     {
         console.log("Loaded script withSRC:" +src)
-        callback();
+        callback(null,src);
     }
 
+    script.onerror=funtion()
+    {
+        console.log("Error loading sript with SRC:" + src)
+        callback(new Error("Src got some Error"))
+    }
     document.body.appendChild(script);
 }
 
-function hello()
+function hello(error,src)
 {
-    alert("hello callback")
+    if(error)
+    {
+        console.log(error)
+        return
+    }
+    alert("hello callback" + src)
 }
-function gm()
+function gm(error,src)
 {
-    alert("Good morning")
+    alert("Good morning" + src)
 }
-loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",gm);
+
+// if there is any error in the src then we can handle it
+
+loadScript("https://cdn.jsdegglivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",hello);
